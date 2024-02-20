@@ -1,4 +1,4 @@
-FROM node:14.20.0 AS builder-osd-2.4.0
+FROM node:14.21.0 AS builder-osd-2.4.0
 USER node
 RUN git clone --depth 1 --branch 2.4.0 https://github.com/opensearch-project/OpenSearch-Dashboards.git /home/node/kbn
 RUN chown node.node /home/node/kbn
@@ -15,7 +15,7 @@ RUN yarn install
 
 RUN mkdir -p /home/node/kbn/data/wazuh/config
 
-FROM node:14.20.0
+FROM node:14.21.0
 USER node
 COPY --from=builder-osd-2.4.0 /home/node/kbn /home/node/kbn
 WORKDIR /home/node/kbn
