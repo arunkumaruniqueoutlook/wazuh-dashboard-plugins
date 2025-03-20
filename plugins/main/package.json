@@ -61,7 +61,7 @@
     "pdfmake": "0.2.7",
     "querystring-browser": "1.0.4",
     "react-codemirror": "^1.0.0",
-    "react-cookie": "^4.0.3",
+    "react-cookie": "^8.0.1",
     "read-last-lines": "^1.7.2",
     "timsort": "^0.3.0",
     "typescript": "^5.0.4"
